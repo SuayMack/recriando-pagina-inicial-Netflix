@@ -5,6 +5,11 @@
     --pretaGrad:rgba(0, 0, 0, .50);
 }
 
+@font-face {
+    font-family: Supernatural;
+    src: url(../fonts/Supernatural_Knight.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -28,7 +33,7 @@ header .logo {
     margin-left: 5px;
     color: var(--vermelha);
     font-family: 'Arial Black', Times;
-    font-size: 40px;
+    font-size: 3rem;
 }
 
 header nav a {
@@ -43,7 +48,7 @@ header nav a:hover {
 
 .filme-principal {
     font-size: 16px;
-    background: linear-gradient(var(--pretaGrad), var(--pretaGrad)100% ), url('../img/house.jpg');
+    background: linear-gradient(var(--pretaGrad), var(--pretaGrad)100% ), url('../img/lucifer.jpg');
     background-size: cover;
     height: 35rem;
     display: flex;
@@ -53,14 +58,17 @@ header nav a:hover {
 }
 
 .filme-principal .descricao {
-    margin-top: 1.5rem;
-    margin-bottom: 90px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
 }
 
 .filme-principal .titulo {
-    margin-top: 9rem;
-    font-size: 3.9rem;
-    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-top: 2rem;
+    font-size: 4rem;
+    font-family: Supernatural;
+    color: var(--branca);
+    
 }
 
 .botao {
@@ -69,7 +77,7 @@ header nav a:hover {
     color: var(--branca);
     padding: 1.2rem 3rem;
     margin-right: 1.5rem;
-    font-size: 12px;
+    font-size: 1rem;
     cursor: pointer;
     transition: .3s ease all;
 }
@@ -78,3 +86,16 @@ header nav a:hover {
     background-color: var(--branca);
     color: var(--preta);
 }
+
+.botao i {
+    margin-right: .2rem;
+}
+
+.container {
+    margin-left: 2rem;
+}
+
+.filme-principal .container {
+    width: 70%;
+}
+
