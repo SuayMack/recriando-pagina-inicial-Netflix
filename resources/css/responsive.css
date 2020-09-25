@@ -1,0 +1,41 @@
+@media screen and (max-width:750px) {
+    * {
+        font-size: small;
+    }
+
+    header .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .botao {
+        margin-top: 5px;
+        width: 190px;
+        height: 60px;
+    }
+
+    nav#menu {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+    
+    .ul {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 80px;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .descricao {
+        width: 50%;
+    }
+
+}
