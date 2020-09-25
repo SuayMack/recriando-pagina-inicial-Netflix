@@ -5,11 +5,18 @@
     --pretaGrad:rgba(0, 0, 0, .50);
 }
 
+/* Fontes */
 @font-face {
     font-family: Supernatural;
     src: url(../fonts/Supernatural_Knight.ttf);
 }
 
+@font-face {
+    font-family: Bebas;
+    src: url(../fonts/Bebas-Regular.ttf);
+}
+
+/* CSS geral */
 * {
     margin: 0;
     padding: 0;
@@ -25,19 +32,27 @@ body {
     color: var(--branca);
 }
 
+/* Header */
+
 nav {
     height: 60px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to bottom,black,#191919);
+    justify-content: space-between;
+}
+
+.nav {
     display: flex;
     align-items: center;
 }
 
 label.logo {
     color: var(--vermelha);
-    font-size: 31px;
-    line-height: 80px;
+    font-size: 29px;
     padding: 0 48px;
-    font-family: 'Arial', Helvetica, sans-serif;
+    font-family: Bebas, 'Arial', Helvetica, sans-serif;
 }
 
 nav ul {
@@ -53,9 +68,36 @@ nav ul li {
 
 nav ul li a {
     color: var(--branca);
-    font-size: 17px;
+    font-size: .8rem;
+    font-family: 'Helvetica', 'Arial',sans-serif;
 }
 
+i.fas {
+    color: white;
+    margin-right: 1rem;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+p.profile {
+    margin-right: 1rem;
+    font-size: .7rem;
+}
+
+img.profile {
+    width: 1.7rem;
+    border-radius: 10px;
+    margin-right: .5rem;
+}
+
+a.profile {
+    display: flex;
+}
+
+/* Main */
 .filme-principal {
     font-size: 16px;
     background: linear-gradient(var(--pretaGrad), var(--pretaGrad)100% ), url('../img/lucifer.jpg');
@@ -92,6 +134,21 @@ nav ul li a {
     font-size: 1rem;
     cursor: pointer;
     transition: .3s ease all;
+    border-radius: 6px;
+}
+
+button#assistir {
+    background-color: var(--branca);
+    color: var(--preta);
+}
+
+i.fas.fa-play {
+    color: black;
+}
+
+button#informacoes {
+    background-color: var(--pretaGrad);
+    color: var(--branca);
 }
 
 .botao:hover {

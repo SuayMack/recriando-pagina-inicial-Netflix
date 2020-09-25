@@ -18,22 +18,44 @@
     <header>
         <div>
             <nav>
-                <label class="logo">NETFLIX</label>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>   
-                <ul>
-                    <li><a href="#" class="active">Inicio</a></li>
-                    <li><a href="#">Séries</a></li>
-                    <li><a href="#">Fimes</a></li>
-                    <li><a href="#">Mais recentes</a></li>
-                    <li><a href="#">Minha lista</a></li>
-                </ul>             
+                <div class="nav">
+                    <label class="logo">NETFLIX</label>                
+                        <input type="checkbox" id="check">
+                        <label for="check" class="checkbtn">
+                            <i class="fas fa-bars"></i>
+                        </label>   
+                        <ul>
+                            <li><a href="#" class="active">Inicio</a></li>
+                            <li><a href="#">Séries</a></li>
+                            <li><a href="#">Fimes</a></li>
+                            <li><a href="#">Mais recentes</a></li>
+                            <li><a href="#">Minha lista</a></li>
+                        </ul> 
+
+                </div>                  
+                <div class="search">
+                    <a href="#">
+                        <i class="fas fa-search"></i>
+                    </a>
+                    <p class="profile">PriscilaCS</p>
+                    <a href="#">
+                        <i class="fas fa-gift"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fas fa-bell"></i>
+                    </a>
+                    <a class="profile" href="#">
+                    <img class="profile" src="/resources/img/netflixProfile.jpg" alt="">
+                    <i class="fas fa-sort-down fa-xs"></i>
+                    </a>
+                </div> 
+                
+                       
                 
             </nav>
         </div>
     </header>
+
     <main>
         <div class="filme-principal">
             <div class="container">
@@ -42,18 +64,20 @@
                     Lucifer está entediado e infeliz como o Senhor do Inferno e decide tirar férias em Los Angeles, onde vira dono de uma casa noturna com ajuda de sua serva Mazikeen.
                 </p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" id="assistir">
                         <i class="fas fa-play"></i>
-                        ASSISTIR AGORA
+                        ASSISTIR
                     </button>
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" id="informacoes">
                         <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
                     </button>
                 </div>
             </div>            
         </div>
-    </main>   
+    </main>
+
+    <!-- Inicio Carrosel -->
     <div class="carrosel-filmes">
         <div class="owl-carousel owl-theme">
             <div class="item">
@@ -94,6 +118,7 @@
             </div>
         </div> 
     </div>
+    <!-- Fim Carrosel-->
 </body>
 <script src="resources/js/owl/jquery.min.js"></script>
 <script src="resources/js/owl/owl.carousel.min.js"></script>
