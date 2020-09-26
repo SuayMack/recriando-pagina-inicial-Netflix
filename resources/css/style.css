@@ -48,6 +48,21 @@ nav {
     align-items: center;
 }
 
+
+label.checkbtn {
+    font-size: small;
+    transition: .3s ease all;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+span.checkbtn {
+    display: none;
+}
+
 label.logo {
     color: var(--vermelha);
     font-size: 29px;
@@ -73,7 +88,7 @@ nav ul li a {
 }
 
 i.fas {
-    color: white;
+    color: var(--branca);
     margin-right: 1rem;
 }
 
@@ -125,16 +140,16 @@ a.profile {
 }
 
 .botao {
-    background-color: var(--pretaGrad);
-    width: 14rem;
-    border: none;
     color: var(--branca);
-    padding: 1.2rem 1rem;
+    border: none;
+    padding: .5rem 1.2rem;
     margin-right: 1.5rem;
-    font-size: 1rem;
+    font-family: 'Helvetica', Arial, sans-serif;
+    font-size: .8rem;
+    font-weight: 600;
     cursor: pointer;
     transition: .3s ease all;
-    border-radius: 6px;
+    border-radius: 3px;
 }
 
 button#assistir {
@@ -143,22 +158,39 @@ button#assistir {
 }
 
 i.fas.fa-play {
-    color: black;
+    color: var(--preta);
 }
 
 button#informacoes {
-    background-color: var(--pretaGrad);
+    background-color:#4c4c4c;
     color: var(--branca);
 }
 
-.botao:hover {
+button#informacoes:hover {
     background-color: var(--branca);
-    color: var(--preta);
+    color:#4c4c4c;
+}
+
+button#assistir:hover {
+    background-color: var(--preta);
+    color: var(--branca);
 }
 
 .botao i {
     margin-right: .2rem;
+    transition: .3s ease all;
 }
+
+#informacoes:hover i {
+    background-color: var(--branca);
+    color: var(--preta);
+}
+
+#assistir:hover i {
+    background-color: var(--preta);
+    color: var(--branca);
+}
+
 
 .container {
     margin-left: 2rem;
@@ -168,17 +200,10 @@ button#informacoes {
     width: 70%;
 }
 
-/* menu hamburger */
-.checkbtn {
-    font-size: 30px;
-    /* color: var(--branca); */
-    float: right;
-    /* line-height: 50px; */
-    margin-right: 2rem;
-    cursor: pointer;
-    display: none;
-}
-#check {
-    display: none;
+.carrosel-filmes {
+    margin-top: 5px;
 }
 
+.owl-carousel .owl-item img {
+    border-radius: 10px;
+}
